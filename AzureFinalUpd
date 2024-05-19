@@ -11,7 +11,7 @@ repeat
     wait()
 until game:IsLoaded()
 
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "azure (temporary notif)",Text = "loading",Duration = 3.6})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Azure.Beta ",Text = "Loading CoreGUI",Duration = 3.6})
 
 local gamerawmetatable = getrawmetatable(game)
 setreadonly(gamerawmetatable, false)
@@ -7941,4 +7941,4 @@ end)
 --// desktop fixed this btw
 if library:Initialize() then library:Initialize() end
 
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "azure (temporary notif)",Text = string.format("Took %ss", math.round((tick() - loadtick)) * 1000 / 1000),Duration = 3.6})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Azure.Beta",Text = string.format("Loaded in %ss", math.round((tick() - loadtick)) * 1000 / 1000),Duration = 3.6})
